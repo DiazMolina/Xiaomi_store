@@ -1,6 +1,7 @@
 # xiaomi_store
 
-A new Flutter project.
+![alt text](xiaomi.gif)
+
 
 ## Getting Started
 
