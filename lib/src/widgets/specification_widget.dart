@@ -20,15 +20,17 @@ class Specification extends StatelessWidget {
               controller: PageController(viewportFraction: 0.8),
               children: <Widget>[
                 Container(
-                    child: Image.network(
-                  "https://www.adslzone.net/app/uploads/2019/02/xiaomi-mi-scooter-pro.jpg",
-                  fit: BoxFit.cover,
-                )),
+                  child: Image.network(
+                    "https://www.adslzone.net/app/uploads/2019/02/xiaomi-mi-scooter-pro.jpg",
+                    fit: BoxFit.fitHeight,
+                  ),
+                ),
                 Container(
-                    child: Image.network(
-                  "https://www.adslzone.net/app/uploads/2019/02/xiaomi-mi-scooter-pro-2.jpg",
-                  fit: BoxFit.cover,
-                )),
+                  child: Image.network(
+                    "https://www.adslzone.net/app/uploads/2019/02/xiaomi-mi-scooter-pro-2.jpg",
+                    fit: BoxFit.fitHeight,
+                  ),
+                ),
               ],
             ),
           ),
