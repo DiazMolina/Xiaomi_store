@@ -77,10 +77,13 @@ class Specification extends StatelessWidget {
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                     ),
-                    Text(
-                      "Milles range",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w200, fontSize: 14),
+                    Container(
+                      width: 40,
+                      child: Text(
+                        "Milles range",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w200, fontSize: 14),
+                      ),
                     ),
                   ],
                 ),
