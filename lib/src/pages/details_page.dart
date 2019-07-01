@@ -56,14 +56,36 @@ class Details extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             Text(
-                              "Model -----------------------------------------",
+                              "Model ",
                               style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w300,
                                   color: Colors.white),
                             ),
+                            DashedLine(),
                             Text(
-                              "M365 PRO",
+                              " M365 PRO",
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                            )
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              "Weight ",
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w300,
+                                  color: Colors.white),
+                            ),
+                            DashedLine(),
+                            Text(
+                              " 18.5 kg",
                               style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
@@ -76,14 +98,15 @@ class Details extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             Text(
-                              "Weight ----------------------------------------------",
+                              "Height ",
                               style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w300,
                                   color: Colors.white),
                             ),
+                            DashedLine(),
                             Text(
-                              "18.5 kg",
+                              " 114 cm",
                               style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
@@ -96,34 +119,15 @@ class Details extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             Text(
-                              "Height -----------------------------------------------",
+                              "Charge time ",
                               style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w300,
                                   color: Colors.white),
                             ),
+                            DashedLine(),
                             Text(
-                              "114 cm",
-                              style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 10),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            Text(
-                              "Charge time ----------------------------------------------",
-                              style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w300,
-                                  color: Colors.white),
-                            ),
-                            Text(
-                              "8h",
+                              " 8h",
                               style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
@@ -315,6 +319,23 @@ class SpecificationBox extends StatelessWidget {
                 color: Colors.black, fontSize: 10, fontWeight: FontWeight.w300),
           )
         ],
+      ),
+    );
+  }
+}
+
+class DashedLine extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Flexible(
+      child: Container(
+        height: 20,
+        child: Text(
+          "-----------------------------------------------------------------",
+          overflow: TextOverflow.fade,
+          style: TextStyle(
+              fontSize: 16, fontWeight: FontWeight.w300, color: Colors.white),
+        ),
       ),
     );
   }
